@@ -2,7 +2,7 @@
 Button with a boolean state for react native. Changes color when selected.
 
 
-```
+```jsx
 import BooleanButton from './BooleanButton';
 
 ...
