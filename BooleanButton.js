@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 class BooleanButton extends React.Component {
 
-  button = (props) => {
+  _button = (props) => {
     const styles = StyleSheet.create({
       button: {
         width: props.width || props.size || 24,
@@ -29,7 +29,7 @@ class BooleanButton extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={this.props.onPress.bind(this)}>
-        {this.button(this.props)}
+        {this._button(this.props)}
       </TouchableOpacity>
     );
   }
